@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* Navbar */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#111;
+color:white;
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:#f4f4f4;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact{
+text-align:center;
+padding:40px;
+background:#222;
+color:white;
+}
+
+@media (max-width:1024px){
+
+.projects{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero h1{
+font-size:32px;
+}
+
+}
+
+
+@media (max-width:600px){
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.nav-links{
+flex-direction:column;
+align-items:center;
+}
+
+.projects{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+.hero{
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:26px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<nav class="navbar">
+<h2>MyPortfolio</h2>
+<ul class="nav-links">
+<li><a href="#">Home</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+
+<section class="hero">
+<h1>Hello, I'm a Web Developer</h1>
+<p>I build responsive websites</p>
+</section>
+
+<section class="projects">
+
+<div class="card">
+<h3>Project 1</h3>
+<p>Portfolio Website</p>
+</div>
+
+<div class="card">
+<h3>Project 2</h3>
+<p>Landing Page</p>
+</div>
+
+<div class="card">
+<h3>Project 3</h3>
+<p>Web App</p>
+</div>
+
+<div class="card">
+<h3>Project 4</h3>
+<p>Dashboard UI</p>
+</div>
+
+<div class="card">
+<h3>Project 5</h3>
+<p>E-commerce UI</p>
+</div>
+
+<div class="card">
+<h3>Project 6</h3>
+<p>Blog Website</p>
+</div>
+
+</section>
+
+<section class="contact">
+<h2>Contact Me</h2>
+<p>Email: example@email.com</p>
+</section>
+
+</body>
+</html>
